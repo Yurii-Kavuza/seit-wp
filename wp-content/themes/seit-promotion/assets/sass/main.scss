@@ -1,0 +1,30 @@
+@import "./utils/vars";
+@import "./utils/reset";
+@import "./utils/hidden";
+
+//      checked and cleaned
+@import "./components/swiper";
+@import "./components/common";
+@import "./components/mob-cta";
+@import "./components/what-we-do";
+@import "./components/description";
+@import "./components/our-customers";
+@import "./components/btn";
+@import "./components/our-contacts";
+@import "./components/about-us";
+@import "./components/manufacture-stages";
+@import "./components/gallery";
+
+//      checked
+@import "./components/bg-wrapper";
+@import "./components/logo";
+@import "./components/container";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/mob-menu";
+@import "./components/footer";
+
+//      not checked
+@import "./components/modal";
+@import "./components/our-works";
+@import "./components/icon";
