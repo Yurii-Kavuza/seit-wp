@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main class="main">
-				<section class="hero">
+				<section class="hero" style="background-image: linear-gradient(#2f303ab3, #2f303ab3), url("<?php echo bloginfo('template_url'); ?>/assets/images/Slider1.jpg");">
 					<div class="container">
 						<h1 class="hero__title">Виробництво зовнішньої реклами в Києві</h1>
 						<p class="hero__description">
@@ -83,16 +83,20 @@
 									<a href="" class="what-we-do__link link">
 										<figure class="figure what-we-do__figure">
 											<div class="what-we-do__thumb">
-												<img
-													class="what-we-do__img"
-													src="<?php echo bloginfo('template_url'); ?>/assets/images/products/volumetric-letters.jpg"
-													alt="Об’ємні літери"
-												/>
+												<?php
+												$image = get_field('picture_1');
+												if(!empty($image)):?>
+												<img class="what-we-do__img"
+												src="<?php echo $image['url'] ?>"
+												alt="<?php echo $image['alt'] ?>" />
 											</div>
-											<figcaption class="what-we-do__label">Об’ємні літери</figcaption>
+											<figcaption class="what-we-do__label"><?php echo $image['alt'] ?></figcaption>
+
+												<?php endif; ?>
+												
 										</figure>
 									</a>
-								</li>
+								</li>								
 								<li class="what-we-do__item">
 									<a href="" class="what-we-do__link link">
 										<figure class="figure what-we-do__figure">
@@ -111,12 +115,16 @@
 									<a href="" class="what-we-do__link link">
 										<figure class="figure what-we-do__figure">
 											<div class="what-we-do__thumb">
-												<img class="what-we-do__img" src="<?php echo bloginfo('template_url'); ?>/assets/images/products/entrance-groups.jpg" alt="Вхідні групи" />
+												<img
+													class="what-we-do__img"
+													src="<?php echo bloginfo('template_url'); ?>/assets/images/products/entrance_groups.jpg"
+													alt="Вхідні групи"
+												/>
 											</div>
 											<figcaption class="what-we-do__label">Вхідні групи</figcaption>
 										</figure>
 									</a>
-								</li>
+								</li>								
 								<li class="what-we-do__item">
 									<a href="" class="what-we-do__link link">
 										<figure class="figure what-we-do__figure">
