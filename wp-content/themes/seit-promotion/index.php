@@ -1,7 +1,11 @@
 <?php get_header(); ?>
 
 <main class="main">
-				<section class="hero" style="background-image: linear-gradient(#2f303ab3, #2f303ab3), url('<?php echo bloginfo('template_url'); ?>/assets/images/Slider1.jpg');">
+	<?php
+		$image = get_field('bg_header_1');
+		if(!empty($image)):?>
+				<section class="hero" style="background-image: linear-gradient(#2f303ab3, #2f303ab3), url('<?php echo $image['url'] ?>');">
+				<?php endif; ?>
 					<div class="container">
 						<h1 class="hero__title">Виробництво зовнішньої реклами в Києві</h1>
 						<p class="hero__description">
