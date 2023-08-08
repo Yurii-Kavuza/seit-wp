@@ -13,6 +13,7 @@
 							<br />
 							Приверніть увагу міста - ваша ключова ставка на успіх!
 						</p>
+						<br>
 						<button type="button" class="btn btn--get-more" id="get-more">Дізнатися більше</button>
 						<ul class="hero__profits-list list">
 							<li class="hero__profits-item">
@@ -84,7 +85,7 @@
 							<h2 class="section__title">Види реклами</h2>
 							<ul class="what-we-do__list list">
 								<li class="what-we-do__item">
-									<a href="" class="what-we-do__link link">
+									<a href="<?php the_field('link_to_picture_1', 2); ?>" class="what-we-do__link link">
 										<figure class="figure what-we-do__figure">
 											<div class="what-we-do__thumb">
 												<?php
@@ -102,7 +103,7 @@
 									</a>
 								</li>								
 								<li class="what-we-do__item">
-									<a href="" class="what-we-do__link link">
+									<a href="<?php the_field('link_to_picture_2', 2); ?>" class="what-we-do__link link">
 										<figure class="figure what-we-do__figure">
 											<div class="what-we-do__thumb">
 												<?php
@@ -120,7 +121,7 @@
 									</a>
 								</li>
 								<li class="what-we-do__item">
-									<a href="" class="what-we-do__link link">
+									<a href="<?php the_field('link_to_picture_3', 2); ?>" class="what-we-do__link link">
 										<figure class="figure what-we-do__figure">
 											<div class="what-we-do__thumb">
 												<?php
@@ -138,7 +139,7 @@
 									</a>
 								</li>								
 								<li class="what-we-do__item">
-									<a href="" class="what-we-do__link link">
+									<a href="<?php the_field('link_to_picture_4', 2); ?>" class="what-we-do__link link">
 										<figure class="figure what-we-do__figure">
 											<div class="what-we-do__thumb">
 												<?php
@@ -156,7 +157,7 @@
 									</a>
 								</li>
 								<li class="what-we-do__item">
-									<a href="" class="what-we-do__link link">
+									<a href="<?php the_field('link_to_picture_5', 2); ?>" class="what-we-do__link link">
 										<figure class="figure what-we-do__figure">
 											<div class="what-we-do__thumb">
 												<?php
@@ -174,7 +175,7 @@
 									</a>
 								</li>
 								<li class="what-we-do__item">
-									<a href="" class="what-we-do__link link">
+									<a href="<?php the_field('link_to_picture_6', 2); ?>" class="what-we-do__link link">
 										<figure class="figure what-we-do__figure">
 											<div class="what-we-do__thumb">
 												<?php
@@ -233,7 +234,8 @@
 								незабутній рекламі.
 							</p>
 							<div class="description__cta">
-								<button type="button" class="btn">Зробити заявку</button>
+								<br>
+								<!-- <button type="button" class="btn">Зробити заявку</button> -->
 							</div>
 						</div>
 					</section>

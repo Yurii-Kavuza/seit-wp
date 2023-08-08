@@ -1,0 +1,30 @@
+.to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 8;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  color: $btn-2-color;
+  border: 1px solid $neutral-section-background;
+  border-radius: 50%;
+  background: $buttons-white-bg;
+  transition: box-shadow $fade-in-animation;
+
+  &.active {
+    display: flex;
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: 3%;
+    right: 3%;
+  }
+}
