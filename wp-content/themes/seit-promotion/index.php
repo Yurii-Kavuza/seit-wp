@@ -13,7 +13,7 @@
 							<br />
 							Приверніть увагу міста - ваша ключова ставка на успіх!
 						</p>
-						<button type="button" class="btn btn--get-more">Дізнатися більше</button>
+						<button type="button" class="btn btn--get-more" id="get-more">Дізнатися більше</button>
 						<ul class="hero__profits-list list">
 							<li class="hero__profits-item">
 								<svg class="icon icon--profit"><use href="<?php echo bloginfo('template_url'); ?>/assets/images/icons.svg#manufacture"></use></svg>
@@ -311,5 +311,5 @@
 						</div>
 					</section>
 				</div>
-			</main>
+			</main>			
             <?php get_footer(); ?>

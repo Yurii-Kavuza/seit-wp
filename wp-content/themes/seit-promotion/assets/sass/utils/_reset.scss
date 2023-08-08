@@ -1,15 +1,19 @@
 html,
 body {
-	box-sizing: border-box;
-	height: 100%;
-	padding: 0;
-	margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 h1,
@@ -19,34 +23,34 @@ h4,
 h5,
 h6,
 p {
-	margin: 0;
+  margin: 0;
 }
 
 body {
-	font-family: "Montserrat", sans-serif;
-	letter-spacing: 0.03em;
-	background-color: var(--primary-bg-color);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.03em;
+  background-color: var(--primary-bg-color);
 }
 
 .list {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 
-	list-style: none;
+  list-style: none;
 }
 
 .link {
-	text-decoration: none;
+  text-decoration: none;
 
-	color: inherit;
+  color: inherit;
 }
 
 img {
-	display: block;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .text--aligned-center {
-	text-align: center;
+  text-align: center;
 }
