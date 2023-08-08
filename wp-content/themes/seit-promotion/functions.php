@@ -11,6 +11,7 @@ function seitpromotion_scripts(){
     wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.js', array('swiper-lib'), null, true );
     wp_enqueue_script( 'current-year', get_template_directory_uri() . '/assets/js/date.js', array(), null, true );
     wp_enqueue_script( 'mobile-menu', get_template_directory_uri() . '/assets/js/mobile-menu.js', array(), null, true );   
+    wp_enqueue_script( 'scrolling', get_template_directory_uri() . '/assets/js/scrolling.js', array(), null, true );   
 }
 
 add_theme_support( 'custom-logo' );
