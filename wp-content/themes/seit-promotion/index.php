@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main class="main">
-				<section class="hero" style="background-image: linear-gradient(#2f303ab3, #2f303ab3), url("<?php echo bloginfo('template_url'); ?>/assets/images/Slider1.jpg");">
+				<section class="hero" style="background-image: linear-gradient(#2f303ab3, #2f303ab3), url('<?php echo bloginfo('template_url'); ?>/assets/images/Slider1.jpg');">
 					<div class="container">
 						<h1 class="hero__title">Виробництво зовнішньої реклами в Києві</h1>
 						<p class="hero__description">
@@ -101,13 +101,17 @@
 									<a href="" class="what-we-do__link link">
 										<figure class="figure what-we-do__figure">
 											<div class="what-we-do__thumb">
-												<img
-													class="what-we-do__img"
-													src="<?php echo bloginfo('template_url'); ?>/assets/images/products/roof-constructions.jpg"
-													alt="Дахові конструкції"
-												/>
+												<?php
+												$image = get_field('picture_2');
+												if(!empty($image)):?>
+												<img class="what-we-do__img"
+												src="<?php echo $image['url'] ?>"
+												alt="<?php echo $image['alt'] ?>" />
 											</div>
-											<figcaption class="what-we-do__label">Дахові конструкції</figcaption>
+											<figcaption class="what-we-do__label"><?php echo $image['alt'] ?></figcaption>
+
+												<?php endif; ?>
+												
 										</figure>
 									</a>
 								</li>
@@ -115,13 +119,17 @@
 									<a href="" class="what-we-do__link link">
 										<figure class="figure what-we-do__figure">
 											<div class="what-we-do__thumb">
-												<img
-													class="what-we-do__img"
-													src="<?php echo bloginfo('template_url'); ?>/assets/images/products/entrance_groups.jpg"
-													alt="Вхідні групи"
-												/>
+												<?php
+												$image = get_field('picture_3');
+												if(!empty($image)):?>
+												<img class="what-we-do__img"
+												src="<?php echo $image['url'] ?>"
+												alt="<?php echo $image['alt'] ?>" />
 											</div>
-											<figcaption class="what-we-do__label">Вхідні групи</figcaption>
+											<figcaption class="what-we-do__label"><?php echo $image['alt'] ?></figcaption>
+
+												<?php endif; ?>
+												
 										</figure>
 									</a>
 								</li>								
@@ -129,13 +137,17 @@
 									<a href="" class="what-we-do__link link">
 										<figure class="figure what-we-do__figure">
 											<div class="what-we-do__thumb">
-												<img
-													class="what-we-do__img"
-													src="<?php echo bloginfo('template_url'); ?>/assets/images/products/interior-signboards.jpg"
-													alt="Інтер’єрні вивіски"
-												/>
+												<?php
+												$image = get_field('picture_4');
+												if(!empty($image)):?>
+												<img class="what-we-do__img"
+												src="<?php echo $image['url'] ?>"
+												alt="<?php echo $image['alt'] ?>" />
 											</div>
-											<figcaption class="what-we-do__label">Інтер’єрні вивіски</figcaption>
+											<figcaption class="what-we-do__label"><?php echo $image['alt'] ?></figcaption>
+
+												<?php endif; ?>
+												
 										</figure>
 									</a>
 								</li>
@@ -143,9 +155,17 @@
 									<a href="" class="what-we-do__link link">
 										<figure class="figure what-we-do__figure">
 											<div class="what-we-do__thumb">
-												<img class="what-we-do__img" src="<?php echo bloginfo('template_url'); ?>/assets/images/products/lightboxes.jpg" alt="Лайтбокси" />
+												<?php
+												$image = get_field('picture_5');
+												if(!empty($image)):?>
+												<img class="what-we-do__img"
+												src="<?php echo $image['url'] ?>"
+												alt="<?php echo $image['alt'] ?>" />
 											</div>
-											<figcaption class="what-we-do__label">Лайтбокси</figcaption>
+											<figcaption class="what-we-do__label"><?php echo $image['alt'] ?></figcaption>
+
+												<?php endif; ?>
+												
 										</figure>
 									</a>
 								</li>
@@ -153,13 +173,17 @@
 									<a href="" class="what-we-do__link link">
 										<figure class="figure what-we-do__figure">
 											<div class="what-we-do__thumb">
-												<img
-													class="what-we-do__img"
-													src="<?php echo bloginfo('template_url'); ?>/assets/images/products/reception.jpg"
-													alt="Оформлення зони ресепшн"
-												/>
+												<?php
+												$image = get_field('picture_6');
+												if(!empty($image)):?>
+												<img class="what-we-do__img"
+												src="<?php echo $image['url'] ?>"
+												alt="<?php echo $image['alt'] ?>" />
 											</div>
-											<figcaption class="what-we-do__label">Оформлення зони ресепшн</figcaption>
+											<figcaption class="what-we-do__label"><?php echo $image['alt'] ?></figcaption>
+
+												<?php endif; ?>
+												
 										</figure>
 									</a>
 								</li>
