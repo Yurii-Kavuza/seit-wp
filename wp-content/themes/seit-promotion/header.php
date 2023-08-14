@@ -137,7 +137,8 @@
 					<div class="container--mobile">
 						<div class="mob-menu__header">
 							<a href="./" class="logo main-nav__logo">
-								<img src="<?php echo bloginfo('template_url'); ?>/assets/images/logoOriginal.png" alt="логотип" />
+								<img src="<?php $custom_logo__url = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' ); 
+                            echo $custom_logo__url[0] ?>" alt="логотип" />
 							</a>
 							<button type="button" class="menu__close">
 								<svg class="menu__icon-close">

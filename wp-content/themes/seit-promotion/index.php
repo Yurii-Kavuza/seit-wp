@@ -7,11 +7,12 @@
 				<section class="hero" style="background-image: linear-gradient(#2f303ab3, #2f303ab3), url('<?php echo $image['url'] ?>');">
 				<?php endif; ?>
 					<div class="container">
-						<h1 class="hero__title">Виробництво зовнішньої реклами в Києві</h1>
+						<h1 class="hero__title"><?php the_field('hero_title',2); ?></h1>
 						<p class="hero__description">
-							Виготовлення всіх видів інтер’єрної та зовнішньої реклами по Україні
+							<?php the_field('hero_desc',2); ?>
+							<!-- Seit Promotion - виробник зовнішньої та інтер’єрної реклами в Києві та по Україні
 							<br />
-							Приверніть увагу міста - ваша ключова ставка на успіх!
+							Розробка дизайн-макета, виготовлення та монтаж вивісок, гарантія на продукцію та послуги, сервісне обслуговування -->
 						</p>
 						<br>
 						<button type="button" class="btn btn--get-more" id="get-more">Дізнатися більше</button>
@@ -43,14 +44,14 @@
 						<h2 class="is-hidden visually-hidden">Іконки контактів та соцмереж</h2>
 						<ul class="mob-cta__list list">
 							<li class="mob-cta__item">
-								<a class="menu__contacts-link link" href="tel:+380951659999" aria-label=" Seit Promotion phone number">
+								<a class="menu__contacts-link link" href="tel:<?php the_field('main_phone_number_call', 2); ?>" aria-label=" Seit Promotion phone number">
 									<svg class="icon icon--mob-cta phone"><use href="<?php echo bloginfo('template_url'); ?>/assets/images/icons.svg#phone"></use></svg>
 								</a>
 							</li>
 							<li class="mob-cta__item">
 								<a
 									class="menu__contacts-link link"
-									href="mailto:seitpromotion@ukr.net"
+									href="mailto:<?php the_field('email', 2); ?>"
 									aria-label=" Seit Promotion email"
 								>
 									<svg class="icon icon--mob-cta mail"><use href="<?php echo bloginfo('template_url'); ?>/assets/images/icons.svg#mail"></use></svg>
@@ -59,7 +60,7 @@
 							<li class="mob-cta__item">
 								<a
 									class="menu__contacts-link link"
-									href="https://instagram.com/seitpromotion?igshid=YmMyMTA2M2Y="
+									href="<?php the_field('instagram', 2); ?>"
 									target="_blank"
 									rel="noreferrer noopener"
 									aria-label="Seit Promotion  Instagram page"
@@ -70,7 +71,7 @@
 							<li class="mob-cta__item">
 								<a
 									class="menu__contacts-link link"
-									href="https://www.facebook.com/SeitPromotion"
+									href="<?php the_field('facebook', 2); ?>"
 									target="_blank"
 									rel="noreferrer noopener"
 									aria-label="Seit Promotion Facebook page"
@@ -194,9 +195,9 @@
 								</li>
 							</ul>
 							<div class="what-we-do__cta">
-								<a class="link btn btn--call-me" href="tel:+380951659999">
+								<a class="link btn btn--call-me" href="tel:<?php the_field('main_phone_number_call', 2); ?>">
 									<svg class="icon phone"><use href="<?php echo bloginfo('template_url'); ?>/assets/images/icons.svg#phone"></use></svg>
-									+38 (095) 165-99-99
+									<?php the_field('main_phone_number_show', 2); ?>
 								</a>
 							</div>
 						</div>
@@ -233,9 +234,8 @@
 								якості наших послуг. Зв’яжіться з нами сьогодні, щоб розпочати співпрацю та реалізувати ваші ідеї у
 								незабутній рекламі.
 							</p>
-							<div class="description__cta">
-								<br>
-								<!-- <button type="button" class="btn">Зробити заявку</button> -->
+							<div class="description__cta">								
+								<button type="button" class="btn" data-modal-open>Зробити заявку</button>
 							</div>
 						</div>
 					</section>

@@ -1,9 +1,3 @@
-// const whatWeDo = document.querySelector(".what-we-do").offsetTop;
-
-// function scrollToWhatWeDo() {
-//     window.scrollTo({ top: whatWeDo, behavior: 'smooth'});
-// }
-
 const getMoreBtn = document.querySelector(".btn--get-more");
 const whatWeDo = document.querySelector(".what-we-do");
 

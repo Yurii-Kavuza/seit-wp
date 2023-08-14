@@ -123,27 +123,27 @@
 
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
-				<p class="modal__title">Залиште свої дані і ми Вам зателефонуємо</p>
+				<p class="modal__title">Надішліть Вашу заявку, щоб ми могли зв’язатись з Вами</p>
 				<form name="callback" class="modal__callback" autocomplete="off">
 					<div class="modal__field modal__field--usual">
 						<input type="text" name="name" id="name" class="modal__input" />
 						<label for="name" class="modal__label">Ім’я</label>
-						<svg class="modal__icon">
+						<svg class="person modal__icon">
 							<use href="<?php echo bloginfo('template_url'); ?>/assets/images/icons.svg#person"></use>
 						</svg>
 					</div>
 					<div class="modal__field modal__field--usual">
 						<input type="text" name="phone" id="phone" class="modal__input" />
 						<label for="phone" class="modal__label">Телефон</label>
-						<svg class="modal__icon">
+						<svg class="phone modal__icon">
 							<use href="<?php echo bloginfo('template_url'); ?>/assets/images/icons.svg#phone"></use>
 						</svg>
 					</div>
 					<div class="modal__field modal__field--usual">
 						<input type="email" name="name" id="email" class="modal__input" />
-						<label for="email" class="modal__label">Пошта</label>
-						<svg class="modal__icon">
-							<use href="<?php echo bloginfo('template_url'); ?>/assets/images/icons.svg#email"></use>
+						<label for="email" class="modal__label">Email</label>
+						<svg class="mail modal__icon">
+							<use href="<?php echo bloginfo('template_url'); ?>/assets/images/icons.svg#mail"></use>
 						</svg>
 					</div>
 					<div class="modal__field modal__field--comment">
@@ -153,26 +153,13 @@
 							class="modal__input modal__input--comment"
 							placeholder="Введіть текст"
 						></textarea>
-						<label for="email" class="modal__label">Коментар</label>
-					</div>
-					<div class="modal__field modal__field--policy">
-						<label class="policy-agreement modal__policy-agreement">
-							<input type="checkbox" name="policy-agreement" id="policy-agreement" class="policy-agreement__checkbox" />
-							<span class="modal__label policy-agreement__text">
-								Погоджуюсь з розсиланням новин і
-								<a href="" class="policy-agreement__link link">Умовами договору</a>
-							</span>
-							<svg class="policy-agreement__icon">
-								<use href="<?php echo bloginfo('template_url'); ?>/assets/images/icons.svg#icon-check"></use>
-							</svg>
-						</label>
-					</div>
-
+						<label for="email" class="modal__label">Повідомлення</label>
+					</div>					
 					<button type="submit" class="btn">Надіслати</button>
 				</form>
 				<button type="button" class="modal__close" data-modal-close>
-					<svg class="modal__icon-close">
-						<use href="<?php echo bloginfo('template_url'); ?>/assets/images/icons.svg#icon-close"></use>
+					<svg class="menu__icon-close">
+									<use href="<?php echo bloginfo('template_url'); ?>/assets/images/icons.svg#iconClose"></use>
 					</svg>
 				</button>
 			</div>
