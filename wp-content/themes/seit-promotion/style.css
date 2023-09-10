@@ -1430,6 +1430,8 @@ img {
 
 .mob-menu {
     position: fixed;
+    opacity: 1;
+    overflow-x: hidden;    
     top: 0;
     width: 100vw;
     height: 100vh;

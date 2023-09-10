@@ -62,7 +62,7 @@
 									</li>
 									<li>
 										<a
-											href="https://goo.gl/maps/FcLEGwVF3wv6u992A"
+											href="https://goo.gl/maps/7Vk1duzJPA59DLT69"
 											target="_blank"
 											rel="noopener noreferrer"
 											class="link footer__link footer__contacts-link"

@@ -7,11 +7,7 @@
 
   refs.openMenuBtn.addEventListener('click', showMenu);
   refs.closeMenuBtn.addEventListener('click', hideMenu);
-
-  // function toggleMenu() {
-  //   refs.menu.classList.toggle('is-hidden');
-  // }
-
+ 
   function showMenu() {
     refs.menu.classList.remove('is-hidden');
     document.body.style.overflow = 'hidden';
